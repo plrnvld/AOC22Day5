@@ -68,7 +68,7 @@ end
 function Column:removeMulti(n)
     local toMove = {}
     for i=1,n do
-        toMove[i] = self:removeCrate()
+        toMove[n+1-i] = self:removeCrate()
     end
     return toMove
 end
